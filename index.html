@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Motif Museum</title>
+        <link rel = "stylesheet" type = "text/css" href = "indexStyle.css">
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="TH">
+        <meta name="viewport" content="width=device-with, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        
+        <!--This div contain left half of website. It doesnt scroll-->
+        <div class = leftSide>
+            <img id = "websiteLogo" src = "Images/Motif Museum Logo.jpg" alt = "Website Logo" >
+            <h1 id = "carouselCaption">All the Light </br> We Cannot See</h1>
+            <div id = "captionLine"></div>
+            <div class = "imgCarousel"></div>
+        </div>
+
+        <!--This div contains the right side of website. The entire thing is an Iframe-->
+        <div class = rightSide>
+            <iframe id = "homeScreenIframe" src = "iframe.html">
+        </div>
+
+        <!--this links the javascript file to the index file-->
+        <script src="script.js"></script>
+    </body>
+
+    
+</html>
+
