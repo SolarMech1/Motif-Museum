@@ -52,14 +52,14 @@ body {
     font-family: "HenriDidot";
     font-weight: normal;
     color: white;
-    top: 480px;
+    top: 50%;
     left: 20px;
     line-height: 100px;
 }
 
 #captionLine {
     position: absolute;
-    top: 780px;
+    top: 82%;
     left: 20px;
     background-color: rgb(221, 169, 57);
     width: 300px;
