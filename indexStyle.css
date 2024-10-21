@@ -33,9 +33,9 @@ body {
     background-size: cover;
 
     animation-name: fade;
-    animation-duration: 50s;
+    animation-duration: 60s;
     animation-iteration-count: infinite;
-    animation-delay: 5s;
+    animation-delay: 6s;
 }
 
 /*ids*/
