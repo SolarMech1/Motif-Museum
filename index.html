@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Motif Museum</title>
+        <link rel = "icon" href = "Images/Motif Museum Logo.jpg">
+        <link rel = "stylesheet" type = "text/css" href = "indexStyle.css">
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="TH">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        
+        <!--This div contain left half of website-->
+        <div class = "leftSide">
+            <div class = "contentSpacing">
+                
+                <img id = "websiteLogo" src = "Images/Motif Museum Logo.jpg" alt = "Website Logo">
+                
+                <!--Navigational Bar-->
+                <nav>
+                    <ul>
+                        <a class = "navBarLinkHome" href = "index.html"><li>Home</li></a>
+                        <a class = "navBarLinkAbout" href = "about.html" target = "homeScreenIframe"><li>About</li></a>
+                    </ul>
+                </nav>
+
+                <h1 id = "carouselCaption">All the Light </br> We Cannot See</h1>
+                <div id = "captionLine"></div>
+            </div>
+        </div>
+
+        <!--This div contains the right side of website. The entire thing is an Iframe-->
+        <div class = "rightSide">
+            <!--id is used for styling, name is used specifically so the target ="" code will work in the navbar-->
+            <iframe id = "homeScreenIframe" name = "homeScreenIframe" src = "iframe.html"></iframe>
+        </div>
+
+        <!--link javascript file to index file-->
+        <script src = "script.js"></script>
+    </body>
+</html>
+
+

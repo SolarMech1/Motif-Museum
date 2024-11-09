@@ -1,0 +1,167 @@
+/*Fonts*/
+@font-face {
+    font-family: "LibreCaslonDisplay";
+    src: url(Fonts/LibreCaslonDisplay-Regular.otf);
+}
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url(Fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url(Fonts/Merriweather-Light.ttf);
+}
+
+/*general tags*/
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*Animations*/
+@keyframes fade {
+    0%   {background-image: url("Images/Saint Malo No Animation.jpg");}
+    33%  {background-image: url("Images/Cropped Img Carousel/Guy Using Radio.jpg");}
+    66%  {background-image: url("Images/Cropped Img Carousel/Group Of German Soldiers.jpg");}
+    100% {background-image: url("Images/Saint Malo No Animation.jpg");}
+}
+
+/*Navigation Bar*/
+nav ul {
+    display: flex;
+    position: absolute;
+    top: 5%;
+    left: 54%;
+
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+
+    font-size: 30px;
+    font-family: "Merriweather-Light";
+    text-decoration: none;
+    color: rgb(221, 169, 57);
+    background-color: black;
+}
+
+nav a:hover {
+    background-color: rgba(100,100,100,.4);
+}
+
+.navBarLinkActive {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+
+    background-color: rgba(100,100,100,.4);
+}
+
+/*Page settings*/
+.contentSpacing {
+    margin: 5%;
+}
+
+.leftSide {
+    animation: fade 50s infinite;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50vw;
+    height: 100vh;
+}
+
+.rightSide {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+
+    width: 50vw;
+    height: 100vh;
+}
+
+/*Left Side content*/
+#websiteLogo {
+    width: 150px;
+    height: 150px;
+}
+
+#carouselCaption {
+    margin-top: 40vh;
+
+    font-size: 100px;
+    font-family: "LibreCaslonDisplay";
+    font-weight: normal;
+    color: white;
+    line-height: 100px;
+}
+
+#captionLine {
+    margin-top: -3%;
+
+    width: 300px;
+    height: 10px;
+    background-color: rgb(221, 169, 57);
+}
+
+/*Right Side content*/
+#homeScreenIframe {
+    margin: 0;
+    padding: 0;
+    
+    width: 50vw;
+    height: 100vh;
+    border: 0;
+}
+
+/*About Page Content*/
+.aboutBody {
+    margin: 5%;
+    background-image: url("Images/Background Image.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#aboutPageHeaderText {
+    font-size: 70px;
+    font-family: "LibreCaslonDisplay"; 
+    font-weight: normal;
+    color: rgb(221, 169, 57);
+
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 15px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather-Light";
+    font-size: 15px;
+    color: white;
+    line-height: 30px;
+}
+
+
+
+

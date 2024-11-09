@@ -1,0 +1,278 @@
+/*Fonts*/
+@font-face {
+    font-family: "LibreCaslonDisplay";
+    src: url(Fonts/LibreCaslonDisplay-Regular.otf); 
+}
+
+@font-face {
+    font-family: "RanchoBronco24";
+    src: url(Fonts/RanchoBronco24.otf); 
+}
+
+@font-face {
+    font-family: "Merriweather-Regular";
+    src: url(Fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Merriweather-Light";
+    src: url(Fonts/Merriweather-Light.ttf);
+}
+
+/*general tags*/
+body {
+    overflow-x: hidden;
+    margin: 5%;
+    padding: 0;
+
+    width: 100vh;
+    height: 100vw;
+
+    background-color: black;
+    background-image: url("Images/Background Image.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    font-family: "Merriweather-Regular";
+}
+
+hr {
+    margin-left: -5vw;
+    width: 100vw;
+    border-color: rgb(221, 169, 57);
+} 
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    font-weight: bold;
+    color: lightBlue;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather-Light";
+    font-size: 15px;
+    color: white;
+    line-height: 30px;
+}
+
+.contentSmallheader {
+    font-family: "LibreCaslonDisplay";
+    font-size: 26px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/*general scrollbar settings*/
+::-webkit-scrollbar {
+    width: .8em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(75,75,75);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100,100,100)
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(125,125,125)
+}
+
+/*header stuff*/
+#pageHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    width: 100%;
+    height: 300px;
+    
+    border-radius: 10px;
+    background-image: url("Images/Radio Header Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#pageHeaderText {
+    font-size: 70px;
+    font-family: "LibreCaslonDisplay"; 
+    font-weight: normal;
+    color: white;
+}
+
+#pageHeaderdate {
+    position: absolute;
+    top: 265px; 
+    left: 0;
+    padding: 10px;
+
+    text-align: center;
+    font-family: "Merriweather-Light";
+    color: rgb(221, 169, 57);
+}
+
+/*Timeline iframe*/
+#timelineIframe {
+    margin-left: -4.9vw;
+
+    width: 98.8vw;
+    height: 500px;
+
+    border: 0px;
+} 
+
+/*Timeline scroll bar settings*/
+.timelineBody::-webkit-scrollbar {
+    height: 1em;
+    border-radius: 100px; 
+}
+
+.timelineBody::-webkit-scrollbar-track {
+    margin-right: 1.2vw;
+    height: 4em;
+    background-color: rgba(44, 44, 44);
+}
+
+.timelineBody::-webkit-scrollbar-thumb {
+    background-color: rgb(151, 115, 38);
+    border-radius: 100px;
+}
+
+.timelineBody::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(221, 169, 57);
+}
+
+/*Timeline body*/
+.timelineBody {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(29, 29, 29, 0.658);
+    background-image: none; 
+    overflow-y: hidden;
+}
+
+/*Timeline contents*/
+#timelineLine {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+    width: 100%;
+    border-top: 10px dotted white;
+}
+
+.timelineImg {
+    transition: width 1s ease-in-out;
+    
+    position: relative;
+    overflow: hidden;
+
+    margin-inline: -70px;
+    padding: 10px;
+    padding-bottom: 30px;
+
+    width: 200px;
+    height: 160px;
+    border: 2px solid rgb(221, 169, 57);
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.timelineImg:hover {
+    cursor: pointer;
+    width: 400px;
+}
+
+.timelineHeaders {
+    font-size: 20px;
+    color: rgb(221, 169, 57);
+    font-family: "Merriweather-Regular";
+}
+
+#timelineText {
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+
+.timelineImg:hover #timelineText {
+    opacity: 1;
+}
+
+#tli1 {
+    margin-top: -250px;
+    background-image: url("Images/Timeline Img/Guglielmo Marconi.jpg");
+}
+
+#tli2 {
+    margin-top: 250px;
+    background-image: url("Images/Timeline Img/AM Radio.png");
+}
+
+#tli3 {
+    margin-top: -250px;
+    background-image: url("Images/Timeline Img/FM Radio.jpg");
+}
+
+#timelineDate {
+    transition: opacity 1s ease;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+
+    font-size: 40px;
+    color: rgb(221, 169, 57);
+    font-family: "Merriweather-Regular";
+}
+
+.timelineImg:hover #timelineDate {
+    opacity: 0;
+}
+
+/*Quotes section*/
+.quoteMark {
+    float: left;
+    font-family: "RanchoBronco24";
+    font-size: 80px;
+}
+
+.quote {
+    color: rgb(221, 169, 57);
+    font-size: 25px;
+    font-family: "Merriweather-Regular";
+    line-height: 50px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+
